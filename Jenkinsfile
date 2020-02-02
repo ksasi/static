@@ -10,7 +10,7 @@ pipeline {
 				'''
 				withAWS(region:'us-west-2') {
 				    withAWS(credentials:'aws-static') {
-    					s3Upload(file:'index.html', bucket:'jenkins-mys3', path:'./index.html')	    
+    					s3Upload(file:'index.html', bucket:'jenkins-mys3', path:'index.html')	    
 								      }
 						            }
 			}
